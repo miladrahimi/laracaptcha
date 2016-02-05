@@ -21,7 +21,7 @@ class Provider extends ServiceProvider {
      * @return void
      */
     public function register() {
-        app()->bind('LaraCaptcha', function () {
+        app()->bind('laraCaptcha', function () {
             return new Captcha();
         });
     }
@@ -38,8 +38,8 @@ class Provider extends ServiceProvider {
             $captcha->draw();
         });
         /** @noinspection PhpUnusedParameterInspection */
-        Validator::extend('laracaptcha', function ($attribute, $value, $parameters) {
-            return (Session::get('laracaptcha') == strtoupper($value));
+        Validator::extend('laraCaptcha', function ($attribute, $value, $parameters) {
+            return (Session::get('laraCaptcha') == strtoupper($value));
         });
     }
 }
