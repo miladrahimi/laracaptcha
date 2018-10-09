@@ -1,5 +1,5 @@
 # LaraCaptcha
-Free Laravel captcha for neat and powerful projects!
+Laravel simple captcha
 
 ## Documentation
 LaraCaptcha is an easy-to-use captcha creator package for Laravel framework.
