@@ -1,5 +1,3 @@
-## This package has been archived and you should use an alternative solution like Google Recaptcha.
-
 # LaraCaptcha
 Laravel simple captcha
 
